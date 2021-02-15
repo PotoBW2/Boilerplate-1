@@ -7,11 +7,11 @@ ALLOWED_HOSTS = ["aqui va el ip de despliege"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.---aqui va el gestor---',
-        'NAME': 'aqui va el nombre de la base de datos',
-        'USER': 'aqui va el usuario',
-        'PASSWORD': 'aqui va la contraseña',
-        'HOST': 'aqui va el ip del servidor de base de datos',
-        'PORT': 'aqui va el puerto del servidor de la base de datos'
+        'NAME': config('NAME_BD'),
+        'USER': config('USER_BD'),
+        'PASSWORD': config('PASSWORD_BD'),
+        'HOST': config('HOST_BD'),
+        'PORT': config('PORT_BD'),
     }
 }
 
